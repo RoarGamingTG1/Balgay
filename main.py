@@ -227,10 +227,6 @@ async def send_random_reply(message):
     "Chengez Khan ki rohen kehti hain, tumhari zindagi ab ek khaufnaak kahani banegi! 💀",
     "Chengez Khan ki rohen kehti hain, tumhara har pal ab maut ka saaya hai! ⚔️",
     
-
-for dialogue in dialogues:
-    print(dialogue)
-    
    
     ]
 
