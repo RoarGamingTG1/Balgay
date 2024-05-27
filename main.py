@@ -472,7 +472,7 @@ async def handle_messages(client, message):
         sent_message = await message.reply_text("I was create by RZ anonymous 💒👿.")
     else:
         question = message.text.lower()
-        trigger_words = ["hihhvvccg", "hellcccccxxo", "kiavvvvvcccc", "vbvcxcxx", "vvvcxxcx", "yvvvccou", "apgvfcxx", "nhgggccci", "terggvvvcca", "banggfcxxx", "halgggccl", "hoggfffw", "mevgvvffcccc", "togvcccccxxxx"]
+        trigger_words = ["ban", "Watsapp", "kia", "dm", "paid", "sim", "kese", "price", "bro", "koi", "help", "hoggfffw", "mevgvvffcccc", "togvcccccxxxx"]
         for word in trigger_words:
             if word in question:
                 await send_dangerous_reply(message)
