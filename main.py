@@ -48,7 +48,7 @@ async def send_series_of_messages(message):
         {
             "text": "MiningBot 4: YescCoin Play for Mining",
             "url": "https://t.me/yescoingame_bot?start=r_6298865570",
-            "image": "https://telegra.ph/file/adb8795cd553aaace3c9d.jpg"
+            "image": "https://telegra.ph/file/4cab774299246ae48c43e.jpg"
         },
         {
             "text": "MiningBot 5: Play with Gamee for Real Earnings",
