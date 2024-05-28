@@ -137,7 +137,7 @@ async def send_series_of_messages(message):
         {
             "text": "MiningBot 2: WCoin Play - Real Mining Earnings",
             "url": "https://t.me/wcoin_tapbot?start=NjI5ODg2NTU3MA==",
-            "image": "https://telegra.ph/file/d559e5d7915081ea2eb1c.jpg"
+            "image": "https://telegra.ph/file/a8812258116b187b94eda.jpg"
         },
         {
             "text": "MiningBot 3: Earn with MemeFi Play",
