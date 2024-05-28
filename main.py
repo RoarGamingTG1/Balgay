@@ -2,7 +2,7 @@ import os
 import random
 import asyncio
 from pyrogram import Client, filters
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, InputMediaPhoto
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 # Bot credentials
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
@@ -16,7 +16,6 @@ app = Client("WormGPT_Bot", bot_token=BOT_TOKEN, api_id=API_ID, api_hash=API_HAS
 async def send_dangerous_reply(message):
     dangerous_messages = [
         "Mining Shru Kren Aaj Se Hi",
-     
     ]
 
     reply = random.choice(dangerous_messages)
@@ -32,42 +31,42 @@ async def send_dangerous_reply(message):
 async def send_series_of_messages(message):
     messages = [
         {
-            "text": "Message 1: ʜᴀᴍsᴛᴇʀ ᴋᴏᴍʙᴀᴛ ᴘʟᴀʏ",
+            "text": "MiningBot 1: Earn through Hamster Kombat Play",
             "url": "https://t.me/Hamster_kombat_bot/start?startapp=kentId6298865570",
             "image": "https://telegra.ph/file/1def17f220265924b3dc4.jpg"
         },
         {
-            "text": "Message 2: ᴡᴄᴏɪɴ ᴘʟᴀʏ",
+            "text": "MiningBot 2: WCoin Play - Real Mining Earnings",
             "url": "https://t.me/wcoin_tapbot?start=NjI5ODg2NTU3MA==",
-            "image": "https://t.me/wcoin_tapbot?start=NjI5ODg2NTU3MA=="
+            "image": "https://telegra.ph/file/d559e5d7915081ea2eb1c.jpg"
         },
         {
-            "text": "Message 3: ᴍᴇᴍᴇ ғɪ ᴘʟᴀʏ",
+            "text": "MiningBot 3: Earn with MemeFi Play",
             "url": "https://t.me/memefi_coin_bot?start=r_d9aa24376d",
             "image": "https://telegra.ph/file/d559e5d7915081ea2eb1c.jpg"
         },
         {
-            "text": "Message 4: ʏᴇsᴄᴏɪɴ ᴘʟᴀʏ ",
+            "text": "MiningBot 4: YescCoin Play for Mining",
             "url": "https://t.me/yescoingame_bot?start=r_6298865570",
-            "image": "https://telegra.ph/file/image4.jpg"
+            "image": "https://telegra.ph/file/adb8795cd553aaace3c9d.jpg"
         },
         {
-            "text": "Message 5: ɢᴀᴍᴇᴇ ᴘʟᴀʏ",
+            "text": "MiningBot 5: Play with Gamee for Real Earnings",
             "url": "https://t.me/gamee?start=ref_6298865570",
             "image": "https://telegra.ph/file/ca27a1c86360ab20b602a.jpg"
         },
         {
-            "text": "Message 6: Tapswab Play",
+            "text": "MiningBot 6: Tapswap Play - Start Mining",
             "url": "https://t.me/tapswap_mirror_bot?start=r_6298865570",
             "image": "https://telegra.ph/file/42c68116b51cd875b93a8.jpg"
         },
         {
-            "text": "Message 7: ᴅᴏᴛ ᴄᴏɪɴ ᴘʟᴀʏ",
+            "text": "MiningBot 7: Earn with DotCoin Play",
             "url": "https://t.me/dotcoin_bot?start=r_6298865570",
             "image": "https://telegra.ph/file/ed844f9c4243cf73b3940.jpg"
         },
         {
-            "text": "Message 8: ᴊᴏɪɴ ɢʀᴏᴜᴘ ғᴏʀ ᴜᴘᴅᴀᴛᴇs",
+            "text": "Group: Join our Group for Updates",
             "url": "https://t.me/zarwish1",
             "image": "https://telegra.ph/file/adb8795cd553aaace3c9d.jpg"
         }
@@ -89,7 +88,8 @@ async def send_series_of_messages(message):
 # Function to send intro message and then a series of messages
 async def send_intro_message(message):
     intro_message = (
-        "In Sab Projects P work kren all Real Mining Platforms Hen Join @zarwish1 🙆"
+        "Friends! MiningBot mein khushamdeed! 💰\n"
+        "Yahan aapko mining se related sab kuch milega. Neeche diye gaye links ko follow karke mining start karein aur earning shuru karein. Juriye humare group @zarwish1 se taake aapko latest updates mil sakein. 🙆"
     )
     sent_message = await message.reply_text(intro_message)
 
@@ -121,4 +121,3 @@ async def handle_messages(client, message):
 
 # Run the bot
 app.run()
-    
