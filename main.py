@@ -168,6 +168,11 @@ async def send_series_of_messages(message):
             "text": "MiningBot 8: Earn With OnChain Play",
             "url": "https://t.me/onchaincoin_bot?start=user_6298865570",
             "image": "https://telegra.ph/file/c1f935787e2955e53cb5d.jpg"
+        },
+        {
+            "text": "MiningBot 9: Near Wallet Hot 🔥 Play",
+            "url": "https://t.me/onchaincoin_bot?start=user_6298865570",
+            "image": "https://telegra.ph/file/0e7fc78f20344c8cd0d4e.jpg"
         }
     ]
 
@@ -182,13 +187,13 @@ async def send_series_of_messages(message):
         )
 
         # Wait for a short period before sending the next message
-        await asyncio.sleep(5)
+        await asyncio.sleep(3)
 
 # Function to send intro message and then a series of messages
 async def send_intro_message(message):
     intro_message = (
         "Friends! "
-        "Yahan aapko mining se related sab kuch milega. Neeche diye gaye links ko follow karke mining start karein aur earning shuru kren in Apne mining krni hai or apny coins badhany hen jb inki listing Hogi to apko acha Profit Milega 😊 kuch bandy Bolty samjh nhi aati 🙆 mining Ki jab tak koi kaam start nhi kroge tab tak samjh nhi ayegi To apna time mat Barbad kren Kren Aaj se Hi start kren 🥰🥰"
+        "Yahan aapko mining se related sab kuch milega. Neeche diye gaye links ko follow karke mining start karein aur earning shuru kren in Apne mining krni hai or apny coins badhany hen jb inki listing Hogi to apko acha Profit Milega 😊 kuch bandy Bolty samjh nhi aati 🙆 mining Ki jab tak koi kaam start nhi kroge tab tak samjh nhi ayegi To apna time mat Barbad kren  Aaj se Hi start kren 🥰🥰"
     )
     sent_message = await message.reply_text(intro_message)
 
