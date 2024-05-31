@@ -193,7 +193,7 @@ async def send_intro_message(message):
     sent_message = await message.reply_text(intro_message)
 
     # Wait for 10 seconds before deleting the intro message
-    await asyncio.sleep(10)
+    await asyncio.sleep(60)
 
     # Delete the sent message
     await sent_message.delete()
