@@ -164,6 +164,11 @@ async def send_series_of_messages(message):
             "url": "https://t.me/dotcoin_bot?start=r_6298865570",
             "image": "https://telegra.ph/file/ed844f9c4243cf73b3940.jpg"
         }
+                {
+            "text": "MiningBot 8: One Chain Play",
+            "url": "https://t.me/onchaincoin_bot?start=user_6298865570",
+            "image": "https://telegra.ph/file/c1f935787e2955e53cb5d.jpg"
+        }
     ]
 
     for msg in messages:
@@ -183,7 +188,7 @@ async def send_series_of_messages(message):
 async def send_intro_message(message):
     intro_message = (
         "Friends! MiningBot mein khushamdeed! 💰\n"
-        "Yahan aapko mining se related sab kuch milega. Neeche diye gaye links ko follow karke mining start karein aur earning shuru karein. Juriye humare group @zarwish1 se taake aapko latest updates mil sakein. 🙆"
+        "Yahan aapko mining se related sab kuch milega. Neeche diye gaye links ko follow karke mining start karein aur earning shuru kren in Apne mining krni hai or apny coins badhany hen jb inki listing Hogi to apko acha Profit Milega 😊 kuch bandy Bolty samjh nhi aati 🙆 mining jab tak koi kaam start nhi krog tab tak samjh nhi ayega apna time mat waste Kren Aaj se Hi start kren 🥰🥰"
     )
     sent_message = await message.reply_text(intro_message)
 
@@ -215,3 +220,4 @@ async def handle_messages(client, message):
 
 # Run the bot
 app.run()
+        
