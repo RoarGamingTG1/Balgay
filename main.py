@@ -163,7 +163,7 @@ async def send_series_of_messages(message):
             "text": "MiningBot 7: Earn with DotCoin Play",
             "url": "https://t.me/dotcoin_bot?start=r_6298865570",
             "image": "https://telegra.ph/file/ed844f9c4243cf73b3940.jpg"
-        }
+        },
                 {
             "text": "MiningBot 8: Earn With OnChain Play",
             "url": "https://t.me/onchaincoin_bot?start=user_6298865570",
