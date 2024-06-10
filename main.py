@@ -173,6 +173,11 @@ async def send_series_of_messages(message):
             "text": "MiningBot 9: Near Wallet Hot 🔥 Play",
             "url": "https://t.me/onchaincoin_bot?start=user_6298865570",
             "image": "https://telegra.ph/file/0e7fc78f20344c8cd0d4e.jpg"
+        },
+        {
+            "text": "MiningBot 10:Earn Pixel verse  🔥 Play use Vpn 1111 To Start",
+            "url": "https://t.me/pixelversexyzbot?start=6298865570",
+            "image": "https://telegra.ph/file/8b77aaac960815e530170.jpg"
         }
     ]
 
