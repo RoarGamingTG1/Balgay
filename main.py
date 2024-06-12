@@ -10,111 +10,21 @@ API_ID = os.environ.get("API_ID")
 API_HASH = os.environ.get("API_HASH")
 
 # Create Pyrogram client
-app = Client("WormGPT_Bot", bot_token=BOT_TOKEN, api_id=API_ID, api_hash=API_HASH)
+app = Client("Mining_Bot", bot_token=BOT_TOKEN, api_id=API_ID, api_hash=API_HASH)
 
 # Function to send threatening reply with random dangerous messages
 async def send_dangerous_reply(message):
     dangerous_messages = [
-        "Mining Shru Kren Aaj Se Hi",
-           "Mining Shuru Kren Aaj Se Hi! ⛏️😄",
+        "Mining Shuru Kren Aaj Se Hi! ⛏️😄",
         "Mining mein zindagi banaayein! 💎🚀",
         "Gold digging ki tarah, bas ghar baithe! 🏡💰",
         "Mining karein, sapne sajayein! 🌟⛏️",
-        "Bitcoin mine kar ke millionnaire banein! 🤑💸",
+        "Bitcoin mine kar ke millionaire banein! 🤑💸",
         "Chalo mining karne ka maza lo! 🎉⛏️",
         "Khudai karen, paisa banayein! 💵🔍",
         "Zameen ke neche chhupe khazaane dhoondein! 🗺️⛏️",
         "Digital sona dhoondhna shuru karein! 📲💎",
-        "Aaj se mining, kal se Lamborghini! 🏎️💨",
-        "Khazaana aapke computer mein chhupa hai! 💻💰",
-        "Mining se ghar ka rent bharna ab aasaan! 🏠💸",
-        "Mining karein, vacation pe jayein! 🌴⛏️",
-        "Har clik pe sona! 🖱️💎",
-        "Mining karein, stress door karein! 😌⛏️",
-        "Crypto mine karein, future secure karein! 🚀🔒",
-        "Paisa banane ka naya tareeqa! 💵⛏️",
-        "Khudai karein, khushiyan le aayein! 🎉⛏️",
-        "Bina mitti ke sona milega! 🏜️💎",
-        "Har mining session mein naya adventure! 🗺️⛏️",
-        "Mining karein aur naya phone khareedein! 📱💸",
-        "Jitna chaho, utna kamao! 💰💯",
-        "Kismat chamkao mining se! 🌟⛏️",
-        "Mining karna, paisa kamaana! 💵⛏️",
-        "Har coin mein nayi kahani! 📖💰",
-        "Sona nikalo, bank balance badhao! 📈💎",
-        "Mining karein aur dosto ko impress karein! 😎⛏️",
-        "Mining karein, weekend enjoy karein! 🍹💰",
-        "Crypto mining, aapka naya hobby! 🏆⛏️",
-        "Khudai karo aur ghar ko sona banayein! 🏡💎",
-        "Mining se jeetne ka naya tareeqa! 🥇⛏️",
-        "Mining se ghar baithe kamaayein! 🛋️💸",
-        "Crypto mining, future earning! 📉⛏️",
-        "Bitcoin mining, future shining! ✨💎",
-        "Mining karein, shandar zindagi jeeyein! 🎉💰",
-        "Digital khazaane aapke intezaar mein! ⛏️💻",
-        "Crypto mine karo aur shaandar bank balance paao! 💸💻",
-        "Mining karein, life set karein! 📈💎",
-        "Mining se har din naya! 🌞⛏️",
-        "Khudai karein aur sapne sach karein! 🌟⛏️",
-        "Mining karein aur apne fortune ko khud likhein! 🖋️💰",
-        "Crypto mining, naya excitement! 🎢💎",
-        "Mining karein aur doston ko sath le aayein! 👯‍♂️⛏️",
-        "Mining se ghar ka kharcha! 🏠💵",
-        "Mining kar ke apne sapne pure karein! 🌠⛏️",
-        "Mining se fortune banayein! 🤑💎",
-        "Crypto mining, nayi duniya! 🌐💰",
-        "Zameen ke neche khazana hai! ⛏️💎",
-        "Mining karein aur millionaire banein! 💰✨",
-        "Mining se dosti badhao! 🤝⛏️",
-        "Crypto mining se apna waqt sahi invest karo! ⏳💰",
-        "Mining se naye projects start karo! 🚀⛏️",
-        "Khudai se apna luck badhao! 🍀💎",
-        "Mining karein aur lavish life jeeyein! 💎🏝️",
-        "Crypto mining se car khareedein! 🚗💰",
-        "Mining se dosti mazboot! 🤝⛏️",
-        "Mining karein aur apna dream home banayein! 🏡💸",
-        "Crypto mining karein aur duniya ghoomein! ✈️💰",
-        "Mining karein aur apni duniya banaayein! 🌍⛏️",
-        "Crypto mining, naye opportunities! 🚀💎",
-        "Mining karein aur daily income paayein! 💵⛏️",
-        "Mining se financial freedom! 🚀💰",
-        "Crypto mining karein aur apna luck chamkaayein! 🌟💎",
-        "Mining karein aur wealth badhayein! 💰📈",
-        "Khudai karein aur apne sapne jeeyein! 🌠⛏️",
-        "Mining karein aur financial stability paayein! 💰🔒",
-        "Crypto mining, naye ideas! 💡💎",
-        "Mining karein aur professional miner banein! ⛏️🏆",
-        "Mining se ghar baithe kamaayein! 🏡💸",
-        "Crypto mining se apna business start karein! 🚀💰",
-        "Mining karein aur shaandar future banayein! 🌠💎",
-        "Crypto mining karein aur life enjoy karein! 🍹💰",
-        "Khudai karein aur apna luck banayein! 🍀⛏️",
-        "Crypto mining se ghar baithe income! 🏠💸",
-        "Mining karein aur apna fortune chamkaayein! 🌟💰",
-        "Crypto mining, naye connections! 🌐💎",
-        "Mining karein aur zindagi enjoy karein! 😄💰",
-        "Mining karein aur aaj hi paisa kamaayein! 💵⛏️",
-        "Crypto mining karein aur financial goals achieve karein! 🏆💎",
-        "Mining se apne dosto ko inspire karein! 👯‍♂️💰",
-        "Mining karein aur financial success paayein! 📈💎",
-        "Khudai karein aur apne sapne jeeyein! 🌟⛏️",
-        "Crypto mining se future secure karein! 🔒💰",
-        "Mining karein aur apna luck chamkaayein! 🌠💎",
-        "Crypto mining karein aur duniya ghoomein! ✈️💰",
-        "Mining karein aur apne goals achieve karein! 🎯💎",
-        "Crypto mining se financial independence! 🚀💰",
-        "Mining karein aur lavish life jeeyein! 💎🏝️",
-        "Crypto mining, naye opportunities! 🌟💎",
-        "Mining karein aur daily income paayein! 💵⛏️",
-        "Mining se apni duniya banayein! 🌍💰",
-        "Crypto mining karein aur life enjoy karein! 🍹💎",
-        "Khudai karein aur apna luck chamkaayein! 🍀⛏️",
-        "Crypto mining se future banayein! 🔮💰",
-        "Mining karein aur apne sapne sach karein! 🌠💎",
-        "Crypto mining se zindagi enjoy karein! 😄💰",
-        "Mining karein aur shaandar life paayein! 🎉💎",
-        "Crypto mining karein aur apna future secure karein! 🔒💰",
-        "Mining karein aur apna fortune chamkaayein! 🌟💎",
+        "Aaj se mining, kal se Lamborghini! 🏎️💨"
     ]
 
     reply = random.choice(dangerous_messages)
@@ -164,7 +74,7 @@ async def send_series_of_messages(message):
             "url": "https://t.me/dotcoin_bot?start=r_6298865570",
             "image": "https://telegra.ph/file/ed844f9c4243cf73b3940.jpg"
         },
-                {
+        {
             "text": "MiningBot 8: Earn With OnChain Play",
             "url": "https://t.me/onchaincoin_bot?start=user_6298865570",
             "image": "https://telegra.ph/file/c1f935787e2955e53cb5d.jpg"
@@ -180,27 +90,25 @@ async def send_series_of_messages(message):
             "image": "https://telegra.ph/file/8b77aaac960815e530170.jpg"
         },
         {
-            "text": "MiningBot 11:Blum 🔥 Play  Popular project 10M community 🧩⭐ ",
-            "url": "t.me/BlumCryptoBot/app?startapp=ref_79sRdOH69z",
-            "image":"https://telegra.ph/file/6146a1fbca7c1ec64c7b2.jpg"
+            "text": "MiningBot 11:Blum 🔥 Play  Popular project 10M community 🧩⭐",
+            "url": "https://t.me/BlumCryptoBot/start?startapp=ref_79sRdOH69z",
+            "image": "https://telegra.ph/file/6146a1fbca7c1ec64c7b2.jpg"
         },
         {
-            "text": "MiningBot 12: 💎 Gemz bot 🔥 Play  Same Hamster 🐹 Project ",
-            "url": "https://t.me/gemzcoin_bOt/tap?startapp=6sHOfy-UFUMjJM2bVfjN9PFc",
-            "image":"https://telegra.ph/file/1ac74b321a1375dfdcba9.jpg"
+            "text": "MiningBot 12: 💎 Gemz bot 🔥 Play  Same Hamster 🐹 Project",
+            "url": "https://t.me/gemzcoin_bot/start?startapp=6sHOfy-UFUMjJM2bVfjN9PFc",
+            "image": "https://telegra.ph/file/1ac74b321a1375dfdcba9.jpg"
         },
         {
-            "text": "MiningBot 13:Mini Ton Play ⏯️  ",
+            "text": "MiningBot 13:Mini Ton Play ⏯️",
             "url": "https://t.me/mini_ton_bot?start=6298865570",
-            "image":"https://telegra.ph/file/4e8b8f960550e55eea5d5.jpg"
+            "image": "https://telegra.ph/file/4e8b8f960550e55eea5d5.jpg"
         }
-    ]
-    ]
     ]
 
     for msg in messages:
         reply_markup = InlineKeyboardMarkup(
-            [[InlineKeyboardButton("Cilick Here To Mine ⭐", url=msg["url"])]]
+            [[InlineKeyboardButton("Click Here To Mine ⭐", url=msg["url"])]]
         )
         sent_message = await message.reply_photo(
             photo=msg["image"],
@@ -215,7 +123,7 @@ async def send_series_of_messages(message):
 async def send_intro_message(message):
     intro_message = (
         "Friends! "
-        "Yahan aapko mining se related sab kuch milega. Neeche diye gaye links ko follow karke mining start karein aur earning shuru kren in Apne mining krni hai or apny coins badhany hen jb inki listing Hogi to apko acha Profit Milega 😊 kuch bandy Bolty samjh nhi aati 🙆 mining Ki jab tak koi kaam start nhi kroge tab tak samjh nhi ayegi To apna time mat Barbad kren  Aaj se Hi start kren 🥰🥰"
+        "Yahan aapko mining se related sab kuch milega. Neeche diye gaye links ko follow karke mining start karein aur earning shuru kren. Aapne mining karni hai aur apne coins badhane hain. Jab inki listing hogi to apko acha profit milega 😊. Kuch log bolte hain samajh nahi aati 🙆 mining ki. Jab tak koi kaam start nahi karoge tab tak samajh nahi aayegi. To apna time mat barbad karein. Aaj se hi start karein 🥰🥰"
     )
     sent_message = await message.reply_text(intro_message)
 
@@ -247,4 +155,4 @@ async def handle_messages(client, message):
 
 # Run the bot
 app.run()
-        
+            
