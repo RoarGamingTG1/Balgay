@@ -178,12 +178,29 @@ async def send_series_of_messages(message):
             "text": "MiningBot 10:Earn Pixel verse  🔥 Play use Vpn 1111 To Start",
             "url": "https://t.me/pixelversexyzbot?start=6298865570",
             "image": "https://telegra.ph/file/8b77aaac960815e530170.jpg"
+        },
+        {
+            "text": "MiningBot 11:Blum 🔥 Play  Popular project 10M community 🧩⭐ ",
+            "url": "t.me/BlumCryptoBot/app?startapp=ref_79sRdOH69z",
+            "image":"https://telegra.ph/file/6146a1fbca7c1ec64c7b2.jpg"
+        },
+        {
+            "text": "MiningBot 12: 💎 Gemz bot 🔥 Play  Same Hamster 🐹 Project ",
+            "url": "https://t.me/gemzcoin_bOt/tap?startapp=6sHOfy-UFUMjJM2bVfjN9PFc",
+            "image":"https://telegra.ph/file/1ac74b321a1375dfdcba9.jpg"
+        },
+        {
+            "text": "MiningBot 13:Mini Ton Play ⏯️  ",
+            "url": "https://t.me/mini_ton_bot?start=6298865570",
+            "image":"https://telegra.ph/file/4e8b8f960550e55eea5d5.jpg"
         }
+    ]
+    ]
     ]
 
     for msg in messages:
         reply_markup = InlineKeyboardMarkup(
-            [[InlineKeyboardButton("Open Link", url=msg["url"])]]
+            [[InlineKeyboardButton("Cilick Here To Mine ⭐", url=msg["url"])]]
         )
         sent_message = await message.reply_photo(
             photo=msg["image"],
